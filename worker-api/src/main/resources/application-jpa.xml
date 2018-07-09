@@ -101,10 +101,7 @@
 			<mvc:mapping path="/api/**" />
 			<!-- 不拦截地址 -->
 			<mvc:exclude-mapping path="/api/menber/register"/>
-			<mvc:exclude-mapping path="/api/menber/findPassword"/>
-			<mvc:exclude-mapping path="/api/family/findPassword"/>
 			<mvc:exclude-mapping path="/api/article/getArticleListByCate"/>
-			<mvc:exclude-mapping path="/api/patient/**"/>
 			<ref bean="userSecurityInterceptor" />
 		</mvc:interceptor>
 	</mvc:interceptors>
